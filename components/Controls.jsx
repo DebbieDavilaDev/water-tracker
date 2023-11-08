@@ -2,7 +2,7 @@ import { Button, ButtonText, Box } from "@gluestack-ui/themed";
 
 export default function Controls({ setVolume, volume }) {
   return (
-    <Box flexDirection="row" mt="$8" flexWrap="wrap" justifyContent="center">
+    <Box flexDirection="row" flexWrap="wrap" justifyContent="center" mt="$8">
       <Button
         m="$4"
         size="xl"
@@ -24,8 +24,7 @@ export default function Controls({ setVolume, volume }) {
         size="xl"
         rounded="$xl"
         action="negative"
-        onPress={() => setVolume(0)}
-      >
+        onPress={() => setVolume(0)}>
         <ButtonText>Reset 🙅‍♀️</ButtonText>
       </Button>
     </Box>
